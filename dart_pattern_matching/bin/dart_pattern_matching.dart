@@ -1,5 +1,7 @@
 import 'package:dart_pattern_matching/dart_pattern_matching.dart' as dart_pattern_matching;
 
 void main(List<String> arguments) {
-  print('Hello world: ${dart_pattern_matching.createPerson()?.occupation}!');
+  final wanderer = dart_pattern_matching.createPerson('Wanderer', 99);
+
+  print('Hello world: ${wanderer!.name}!');
 }
